@@ -230,7 +230,8 @@
     }
 
     .contact-card i {
-        @apply text-[40px] text-white border-4 rounded-full p-[10px]
+        aspect-ratio: 1;
+        @apply text-[40px] text-white border-4 rounded-full p-[10px] aspect-square
     }
 
     .contact-card h3 {
