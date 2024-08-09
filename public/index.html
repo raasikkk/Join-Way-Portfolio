@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join-Way Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <link rel="manifest" href="icons/site.webmanifest">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="bg-white dark:bg-gray-900">
+    <div id="preloader">
+        <div class="loader"></div>
+        <div class="loader"></div>
+        <div class="loader"></div>
+    </div>
+    <div class="container mx-auto">
+        <!-- Nav -->
+        <nav id="nav" class="mt-7">
+            <div class="nav-center">
+                <!-- Nav Header -->
+                <div class="nav-header">
+                    <img src="images/logo-light.png" alt="logo" class="logo hover:-translate-y-1 transition">
+                    <div class="buttons xxs:flex xs:flex sm:flex md:flex lg:hidden gap-[3rem]">
+                        <!-- Dark Mode Switcher -->
+                    <button id="darkModeToggle" class="p-3 rounded bg-j-blue shadow-lg shadow-j-blue/35 hover:-translate-y-1 transition text-white dark:bg-j-yellow dark:text-black">Dark Mode</button>
+                    <!-- Burger Menu -->
+                    <button class="nav-toggle text-[1.5rem] cursor-pointer text-j-blue dark:text-white lg:hidden"><i class="fas fa-bars"></i></button>
+                    </div>
+                </div>
+                <!-- Links -->
+                <div class="links-container">
+                    <ul class="links text-j-blue dark:text-white transition-none">
+                        <li>
+                            <a href="#" class="scroll-link hover:border-b-2 border-b-2 border-j-blue dark:border-white">Главная</a>
+                        </li>
+                        <li>
+                            <a href="#about" class="scroll-link hover:border-b-2 border-j-blue dark:border-white">О Нас</a>
+                        </li>
+                        <li>
+                            <a href="#portfolio" class="scroll-link hover:border-b-2 border-j-blue dark:border-white">Портфолио</a>
+                        </li>
+                        <li>
+                            <a href="#services" class="scroll-link hover:border-b-2 border-j-blue dark:border-white">Наши услуги</a>
+                        </li>
+                        <li>
+                            <a href="#contacts" class="scroll-link hover:border-b-2 border-j-blue dark:border-white">Контакты</a>
+                        </li>
+                    </ul
+                </div>
+
+                
+            </div>
+            <div class="buttons xxxs:hidden xxs:hidden xs:hidden sm:hidden md:hidden lg:flex gap-[3rem]">
+                <!-- Dark Mode Switcher -->
+            <button id="darkModeToggle" class="p-3 rounded bg-j-blue shadow-lg shadow-j-blue/35 hover:-translate-y-1 transition text-white dark:bg-j-yellow dark:text-black">Dark Mode</button>
+            <!-- Burger Menu -->
+            <button class="nav-toggle text-[1.5rem] cursor-pointer text-j-blue dark:text-white lg:hidden"><i class="fas fa-bars"></i></button>
+        </div>
+        </nav>
+
+        <!-- Hero -->
+        <section class="hero mt-[100px]">
+            <div class="hero-content max-w-[970px] h-auto mx-auto">
+                <h1 class="xxs:text-[25.91px] sm:text-[35.91px] md:text-[45.91px] lg:text-[55.91px] font-bold text-center dark:text-white hiddenYEl "><span class="text-j-yellow">Каждый проект</span> — это уникальная история, и мы помогаем её рассказать</h1>
+                <div class="buttons flex justify-center gap-[35px] mt-[39px]">
+                    <button class="w-[205px] h-[55px] bg-j-yellow shadow-lg shadow-j-yellow/35 hover:-translate-y-1 hover:transition text-j-blue rounded-[39px] hiddenYEl ">Заказать</button>
+                    <button class="w-[205px] h-[55px] bg-j-blue shadow-lg shadow-j-blue/35 hover:-translate-y-1 hover:transition text-j-yellow rounded-[39px] hiddenYEl ">Портфолио</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us -->
+         <section id="about" class="about mt-[200px]">
+            <div class="about-content xxs:p-[25px] sm:p-[35px] md:p-[40px] lg:p-[45px] w-full bg-j-blue rounded-[39px] ">
+                <div class="about-main flex">
+                    <div class="about-descr md:w-[100%] lg:w-[100%] customlg:w-[50%]">
+                        <h1 class="xs:text-[25.34px] sm:text-[28.34px] md:text-[35.34px] lg:text-[42.34px] font-bold text-j-yellow hiddenYEl">Немного о нашей команде</h1>
+                        <div class="about-img sm:block md:block lg:block customlg:hidden">
+                            <img src="images/about-img.png" alt="about-img">
+                        </div>
+                        <div class="paragraphs mt-[27px] text-[16px] text-white gap-[37px]">
+                            <p class="mb-[27px] hiddenYEl">Мы — команда профессионалов, создающая и продающая уникальные и функциональные веб-сайты, которые помогают бизнесам выделяться и расти в цифровом мире.</p>
+                            <p class="mb-[27px] hiddenYEl">Помогать бизнесам достигать успеха в интернете через уникальные и эффективные веб-сайты.</p>
+                            <p class="mb-[27px] hiddenYEl">Наша цель — понимать потребности каждого клиента и предлагать решения, которые идеально соответствуют их бизнес-целям.</p>
+                            <p class="mb-[27px] hiddenYEl">Мы стремимся к постоянному улучшению качества наших услуг и внедрению новейших технологий и трендов в веб-дизайне.</p>
+                        </div>
+                    </div>
+                    <div class="about-img xxs:hidden sm:hidden md:hidden lg:hidden customlg:block float-right">
+                        <img src="images/about-img.png" alt="about-img">
+                    </div>
+                </div>
+                <!-- Experience -->
+                <h1 class="xs:text-[25.34px] sm:text-[28.34px] md:text-[35.34px] lg:text-[42.34px] font-bold text-j-yellow hiddenYEl">Опыты</h1>
+                <div class="exp-cards mt-[23px] gap-[50px] grid md:grid-cols-2 lg:grid-cols-4">
+                    <div class="exp-card bg-j-yellow shadow-lg shadow-j-yellow/35 hover:-translate-y-2 hover:transition text-white rounded-[39px] p-[12px] px-[18px] pb-[20px] hiddenXEl ">
+                        <h2 class="font-semibold">WEB - DESIGN</h2>
+                        <h3 class="font-light">by: Makhanbetov Issatay</h3>
+                        <p class="font-light">60%</p>
+                        <div class="white-line h-[5px] w-full bg-white rounded-[39px]">
+                            <div class="blue-line h-[5px] w-[60%] bg-j-blue rounded-[39px]"></div>
+                        </div>
+                    </div>
+                    <div class="exp-card bg-j-yellow shadow-lg shadow-j-yellow/35 hover:-translate-y-2 hover:transition text-white rounded-[39px] p-[12px] px-[18px] pb-[20px] hiddenXEl">
+                        <h2 class="font-semibold">WEB - DESIGN</h2>
+                        <h3 class="font-light">by: Makhanbetov Issatay</h3>
+                        <p class="font-light">60%</p>
+                        <div class="white-line h-[5px] w-full bg-white rounded-[39px]">
+                            <div class="blue-line h-[5px] w-[60%] bg-j-blue rounded-[39px]"></div>
+                        </div>
+                    </div>
+                    <div class="exp-card bg-j-yellow shadow-lg shadow-j-yellow/35 hover:-translate-y-2 hover:transition text-white rounded-[39px] p-[12px] px-[18px] pb-[20px] hiddenXEl ">
+                        <h2 class="font-semibold">WEB - DESIGN</h2>
+                        <h3 class="font-light">by: Makhanbetov Issatay</h3>
+                        <p class="font-light">60%</p>
+                        <div class="white-line h-[5px] w-full bg-white rounded-[39px]">
+                            <div class="blue-line h-[5px] w-[60%] bg-j-blue rounded-[39px]"></div>
+                        </div>
+                    </div>
+                    <div class="exp-card bg-j-yellow shadow-lg shadow-j-yellow/35 hover:-translate-y-2 hover:transition text-white rounded-[39px] p-[12px] px-[18px] pb-[20px] hiddenXEl">
+                        <h2 class="font-semibold">WEB - DESIGN</h2>
+                        <h3 class="font-light">by: Makhanbetov Issatay</h3>
+                        <p class="font-light">60%</p>
+                        <div class="white-line h-[5px] w-full bg-white rounded-[39px]">
+                            <div class="blue-line h-[5px] w-[60%] bg-j-blue rounded-[39px]"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </section>
+         <!-- authors -->
+         <section class="authors mt-[100px]">
+            <div class="authors-cards gap-[50px] grid md:grid-cols-2 lg:grid-cols-4">
+                <div class="author-card shadow-lg shadow-j-blue/35 hiddenYEl">
+                    <img src="images/dimash.png" class="w-[75%] mx-auto" alt="author">
+                    <h2 class="font-bold text-[19px] mt-[16px]">Dimash Aizharykov</h2>
+                    <p class="pb-[55px] font-medium text-[15px]">Full Stack Developer</p>
+                </div>
+                <div class="author-card shadow-lg shadow-j-blue/35 hiddenYEl">
+                    <img src="images/rasul.png" class="w-[75%] mx-auto" alt="author">
+                    <h2 class="font-bold text-[19px] mt-[16px]">Rasul Zhankeldiuly</h2>
+                    <p class="pb-[55px] font-medium text-[15px]">Full Stack Developer</p>
+                </div>
+                <div class="author-card shadow-lg shadow-j-blue/35 hiddenYEl">
+                    <img src="images/issatay.png" class="w-[75%] mx-auto" alt="author">
+                    <h2 class="font-bold text-[19px] mt-[16px]">Issatay Makhanbetov</h2>
+                    <p class="pb-[55px] font-medium text-[15px]">Web Designer</p>
+                </div>
+                <div class="author-card shadow-lg shadow-j-blue/35 hiddenYEl">
+                    <img src="images/darzhan.png" class="w-[75%] mx-auto" alt="author">
+                    <h2 class="font-bold text-[19px] mt-[16px]">Darzhan Eduardovich</h2>
+                    <p class="pb-[55px] font-medium text-[15px]">Full Stack Developer</p>
+                </div>
+            </div>
+         </section>
+
+         <!-- Our Portfolio -->
+         <section id="portfolio" class="portfolio mt-[130px]">
+            <h1 class="xs:text-[25.34px] sm:text-[28.34px] md:text-[35.34px] lg:text-[42.34px] font-bold text-j-blue dark:text-j-yellow hiddenYEl max-w-[527px]">Посмотрите Наше Портфолио</h1>
+            <!-- Portfolio Cards -->
+            <div class="portfolio-cards">
+              <div class="portfolio-card relative hiddenYEl show">
+                <img src="images/join-way-shop.png" alt="join-way-shop" class="rounded-[39px] sm:h-[250px] md:h-[300px] lg:h-[335px] w-full">
+                <div class="description ">
+                  <div class="text-descr text-white text-center p-4 hiddenYEl">
+                    <a href="https://shop.join-way.com/index.html" class="sm:text-[20px] md:text-[25px] lg:text-[29px] font-bold text-j-yellow underline">Сайт Для "Join Way Shop"</a>
+                    <h3 class="mt-2 xs:text-[12px] md:text-[14px] lg:text-[16px]">Мы разработали интернет-магазин Join-Way с интуитивным интерфейсом и адаптивным дизайном для всех устройств. Платформа обеспечивает высокий уровень безопасности и предоставляет возможности для самовыражения и самореализации.</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio-card relative hiddenYEl ">
+                <img src="images/GIC.png" alt="join-way-shop" class="rounded-[39px] sm:h-[250px] md:h-[300px] lg:h-[335px] w-full">
+                <div class="description">
+                  <div href="https://gi-construction.kz/index.html" class="text-descr text-white text-center p-4 hiddenYEl">
+                    <a href="https://gi-construction.kz/index.html" class="sm:text-[20px] md:text-[25px] lg:text-[29px] font-bold text-j-yellow underline">Сайт Для "Global Industrial Construction"</a>
+                    <h3 class="mt-2 xs:text-[12px] md:text-[14px] lg:text-[16px]">Мы разработали веб-сайт для GI Construction, который сочетает удобный интерфейс и адаптивный дизайн для корректного отображения на любых устройствах. Используемые технологии обеспечивают надежную защиту данных и стабильную работу сайта.</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio-card relative hiddenYEl">
+                <img src="images/WDC (1).png" alt="join-way-shop" class="rounded-[39px] sm:h-[250px] md:h-[300px] lg:h-[335px] w-full">
+                <div class="description">
+                  <div class="text-descr text-white text-center p-4 hiddenYEl">
+                    <a href="https://wdc.kz/" class="sm:text-[20px] md:text-[25px] lg:text-[29px] font-bold text-j-yellow underline">Сайт Для "West Development Company"</a>
+                    <h3 class="mt-2 xs:text-[12px] md:text-[14px] lg:text-[16px]">Мы разработали веб-сайт для WDC с фокусом на простоту навигации и адаптивность. Сайт обеспечивает плавную работу на всех устройствах и использует передовые технологии для надежной защиты данных и безопасности транзакций.</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          <!-- Our Services -->
+           <section id="services" class="services mt-[100px]">
+                <h1 class="xs:text-[25.34px] sm:text-[28.34px] md:text-[35.34px] lg:text-[42.34px] font-bold dark:text-j-yellow text-j-blue text-center hiddenYEl">Наши Услуги</h1>
+                <div class="services-cards text-center mt-[100px] flex justify-around flex-wrap gap-[50px] space-x-6">
+                    <!-- Service Card 1 -->
+                    <div class="service-card hiddenYEl ">
+                      <div class="absolute -top-12 left-1/2 transform -translate-x-1/2">
+                        <img src="images/dev-icon.png" alt="dev-icon" class=" p-4 ">
+                      </div>
+                      <h2 class="mt-16 text-center font-bold text-[25px]">Веб-Разработка</h2>
+                      <div class="line my-2 mx-auto w-[35%] border-t-4 border-[#1C004B]"></div>
+                      <p class="text-sm">создаём функциональные и надёжные сайты с использованием современных технологий, обеспечивая их быструю и стабильную работу.</p>
+                    </div>
+                    
+                    <!-- Service Card 2 -->
+                    <div class="service-card hiddenYEl">
+                      <div class="absolute -top-12 left-1/2 transform -translate-x-1/2">
+                        <img src="images/design-icon.png" alt="design-icon" class=" p-4 ">
+                      </div>
+                      <h2 class="mt-16 text-center font-bold text-[25px]">Веб-Дизайн</h2>
+                      <div class="line my-2 mx-auto w-[35%] border-t-4 border-[#1C004B]"></div>
+                      <p class="text-sm">создаём уникальные и адаптивные сайты, ориентированные на удобство пользователя и бизнес-цели.</p>
+                    </div>
+                    
+                    <!-- Service Card 3 -->
+                    <div class="service-card hiddenYEl">
+                      <div class="absolute -top-12 left-1/2 transform -translate-x-1/2">
+                        <img src="images/parse-icon.png" alt="parse-icon" class=" p-4 ">
+                      </div>
+                      <h2 class="mt-16 text-center font-bold text-[25px]">Парсинг Сайтов</h2>
+                      <div class="line my-2 mx-auto w-[35%] border-t-4 border-[#1C004B]"></div>
+                      <p class="text-sm">извлекаем и обрабатываем данные с веб-ресурсов, предоставляя актуальную и структурированную информацию для анализа и использования.</p>
+                    </div>
+                  </div>
+           </section>
+
+           <!-- Discount Timer -->
+            <section class="timer mt-[200px]">
+                <h1 class="xs:text-[25.34px] sm:text-[28.34px] md:text-[35.34px] lg:text-[42.34px] font-bold dark:text-j-yellow text-j-blue text-center hiddenYEl ">Супер-скидка На Все Услуги</h1>
+                <h2 class="mt-[20px] max-w-[500px] mx-auto sm:text-[15.34px] md:text-[18.34px] lg:text-[22.34px] font-medium dark:text-j-yellow text-j-blue text-center hiddenYEl">Улучшите свой онлайн-образ с нами и получите отличную цену</h2>
+                <!-- Deadline Timer -->
+                <div class="deadline mt-[30px] flex justify-center flex-wrap gap-[20px] hiddenYEl">
+                    <div class="deadline-format relative w-[179px]" id="days">
+                        <img class="absolute max-w-[179px] animate-spin-slow" src="images/days-circle.png" alt="">
+                        <h3 class="">15</h3>
+                        <span class="span">Дней</span>
+                    </div>
+                    <div class="deadline-format relative w-[179px]" id="days">
+                        <img class="absolute max-w-[179px] animate-spin-slow" src="images/hours-circle.png" alt="">
+                        <h3 class="">15</h3>
+                        <span class="span">Часов</span>
+                    </div>
+                    <div class="deadline-format relative w-[179px]" id="days">
+                        <img class="absolute max-w-[179px] animate-spin-slow" src="images/minutes-circle.png" alt="">
+                        <h3 class="">15</h3>
+                        <span class="span">Минут</span>
+                    </div>
+                    <div class="deadline-format relative w-[179px]" id="days">
+                        <img class="absolute max-w-[179px] animate-spin-slow" src="images/seconds-circle.png" alt="">
+                        <h3 class="">15</h3>
+                        <span class="span">Секунд</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contacts -->
+             <section id="contacts" class="contacts mt-[200px]">
+                <div class="contacts-content flex">
+                    <div class="contacts-descr md:w-[100%] lg:w-[100%] customlg:w-[50%]">
+                        <h1 class="xs:text-[25.34px] sm:text-[28.34px] md:text-[35.34px] lg:text-[42.34px] font-bold text-j-blue dark:text-j-yellow hiddenYEl">Есть вопросы или хотите заказать сайт?</h1>
+                        <h2 class="mt-[10px] xs:text-[17.34px] sm:text-[17.34px] md:text-[17.34px] lg:text-[24.34px] font-medium text-j-blue/75 dark:text-[#C6B55A] hiddenYEl">Мы всегда рады помочь! Напишите нам, и мы ответим на все ваши вопросы.</h2>
+                        <div class="contacts-img xxs:block sm:block md:block lg:block customlg:hidden">
+                            <img src="images/contacts-img.png" alt="contacts-img">
+                        </div>
+                        <div class="contact-cards mt-[50px] flex flex-wrap justify-center customlg:justify-normal gap-[25px]">
+                            <a href="https://www.instagram.com/joinway.24?igsh=eGM0d2Q3ZTR6c29k" class="contact-card">
+                                <i class="fa-brands fa-instagram"></i>
+                                <h3>@joinway.24</h3>
+                            </a>
+                            <a href="#" class="contact-card">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                                <h3>Join Way</h3>
+                            </a>
+                            <a href="#" class="contact-card">
+                                <i class="fa-brands fa-whatsapp"></i>
+                                <h3>+ 777 777 77 77</h3>
+                            </a>
+                            <a href="https://www.tiktok.com/@joinway.shop?_t=8ohBCTJhCwH&_r=1" class="contact-card">
+                                <i class="fa-brands fa-tiktok"></i>
+                                <h3>@joinway.shop</h3>
+                            </a>
+                            <a href="#" class="contact-card">
+                                <i class="fa-brands fa-telegram"></i>
+                                <h3>@join.way</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contacts-img xxs:hidden sm:hidden md:hidden lg:hidden customlg:block ">
+                        <img src="images/contacts-img.png" alt="contacts-img">
+                    </div>
+                </div>
+             </section>
+    </div>
+    <footer class="mt-[50px] bg-j-blue min-h-[350px]">
+        <div class="container mx-auto">
+            <div class="footer-main max-w-[900px] mx-auto">
+                <img src="images/logo-white.png" alt="logo" class="logo xxs:mx-0 xs:mx-0 sm:mx-0 md:mx-auto">
+                <ul class="footer-links mt-[11px] max-w-[600px] xxs:mr-auto xs:mr-auto sm:mr-auto md:mx-auto text-white text-[18px] font-medium flex xxs:flex-col xs:flex-col sm:flex-col gap-[24px] md:flex-row justify-between">
+                    <li>
+                        <a href="#" class="text-[25px] font-bold border-white xs:block sm:block md:hidden">Навигация</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:border-b-2 border-white">Главная</a>
+                    </li>
+                    <li>
+                        <a href="#about" class="hover:border-b-2 border-white">О Нас</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio" class="hover:border-b-2 border-white">Портфолио</a>
+                    </li>
+                    <li>
+                        <a href="#services" class="hover:border-b-2 border-white">Наши услуги</a>
+                    </li>
+                    <li>
+                        <a href="#contacts" class="hover:border-b-2 border-white">Контакты</a>
+                    </li>
+                </ul>
+                <div class="social-icons mt-[35px] text-[30px] text-white flex justify-center gap-[15px]">
+                    <a href="https://www.instagram.com/joinway.24?igsh=eGM0d2Q3ZTR6c29k">
+                        <i class="fa-brands fa-instagram border-2 p-[10px] rounded-full hover:bg-j-yellow transition"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-linkedin-in border-2 p-[10px] rounded-full hover:bg-j-yellow transition"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-whatsapp border-2 p-[10px] rounded-full hover:bg-j-yellow transition"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-telegram border-2 p-[10px] rounded-full hover:bg-j-yellow transition"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@joinway.shop?_t=8ohBCTJhCwH&_r=1">
+                        <i class="fa-brands fa-tiktok border-2 p-[10px] rounded-full hover:bg-j-yellow transition"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="h-[50px] mt-[50px] py-[15px] text-center text-white bg-[#170239] text-[15px] font-semibold">
+            &copy; <span id="footerYear"></span> Join-Way. Все права защищены.
+        </div>
+    </footer>
+    
+
+    <script defer src="js/main.js" type="module"></script>
+</body>
+</html>
