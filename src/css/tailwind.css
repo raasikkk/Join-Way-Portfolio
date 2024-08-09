@@ -159,6 +159,7 @@
     .hide-preloader {
         z-index: -9999;
         visibility: hidden;
+        opacity: 0;
     }
     .fixed-nav {
         position: fixed;

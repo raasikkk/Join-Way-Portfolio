@@ -617,6 +617,7 @@ html::selection{
 .hide-preloader {
   z-index: -9999;
   visibility: hidden;
+  opacity: 0;
 }
 
 .author-card{
@@ -1262,6 +1263,14 @@ html::selection{
   margin-top: 50px;
 }
 
+.mt-3{
+  margin-top: 0.75rem;
+}
+
+.mt-\[25px\]{
+  margin-top: 25px;
+}
+
 .flex{
   display: flex;
 }
@@ -1288,6 +1297,10 @@ html::selection{
 
 .min-h-\[350px\]{
   min-height: 350px;
+}
+
+.w-\[100\%\]{
+  width: 100%;
 }
 
 .w-\[179px\]{
@@ -1459,6 +1472,16 @@ html::selection{
   background-color: rgb(23 2 57 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#340089\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(52 0 137 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#450ABA\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(69 10 186 / var(--tw-bg-opacity));
+}
+
 .bg-j-blue{
   --tw-bg-opacity: 1;
   background-color: rgb(52 0 137 / var(--tw-bg-opacity));
@@ -1498,6 +1521,26 @@ html::selection{
 .py-\[15px\]{
   padding-top: 15px;
   padding-bottom: 15px;
+}
+
+.px-\[20px\]{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.px-\[25px\]{
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.px-\[35px\]{
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+.px-\[55px\]{
+  padding-left: 55px;
+  padding-right: 55px;
 }
 
 .pb-\[20px\]{
@@ -1654,6 +1697,11 @@ html::selection{
   background-color: rgb(255 215 0 / var(--tw-bg-opacity));
 }
 
+.dark\:text-\[\#C6B55A\]:is(.dark *){
+  --tw-text-opacity: 1;
+  color: rgb(198 181 90 / var(--tw-text-opacity));
+}
+
 .dark\:text-black:is(.dark *){
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
@@ -1667,11 +1715,6 @@ html::selection{
 .dark\:text-white:is(.dark *){
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.dark\:text-\[\#C6B55A\]:is(.dark *){
-  --tw-text-opacity: 1;
-  color: rgb(198 181 90 / var(--tw-text-opacity));
 }
 
 @media (min-width: 100px){
