@@ -122,7 +122,7 @@ let tempYear = tempDate.getFullYear();
 let tempMonth = tempDate.getMonth();
 let tempDay = tempDate.getDate();
 
-let futureDate = new Date(2024, 7, 12, 10, 30, 0)
+let futureDate = new Date(2024, 7, 26, 10, 30, 0)
 
 const year = futureDate.getFullYear();
 const hours = futureDate.getHours();

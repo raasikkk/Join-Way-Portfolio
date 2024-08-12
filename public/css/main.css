@@ -1265,6 +1265,10 @@ html::selection{
   margin-top: 50px;
 }
 
+.mt-\[15px\]{
+  margin-top: 15px;
+}
+
 .flex{
   display: flex;
 }
@@ -1519,6 +1523,14 @@ html::selection{
 
 .pb-\[55px\]{
   padding-bottom: 55px;
+}
+
+.pt-8{
+  padding-top: 2rem;
+}
+
+.pt-\[15px\]{
+  padding-top: 15px;
 }
 
 .text-center{
