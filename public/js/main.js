@@ -35,7 +35,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const toggleButtons = document.querySelectorAll('#darkModeToggle');
     const logoImg = document.querySelector('.logo');
     const currentMode = localStorage.getItem('theme');
-  
+    const darkModeSwitchers = document.querySelectorAll('.switch-btn');
+
     if (currentMode === 'dark') {
       document.documentElement.classList.add('dark');
       logoImg.src = 'images/logo-dark.png';
@@ -43,24 +44,56 @@ document.addEventListener('DOMContentLoaded', () => {
         toggleButton.textContent = 'Light Mode';
         toggleButton.classList.add('shadow-j-yellow/35');
       });
+      darkModeSwitchers.forEach((btn) => {
+        btn.classList.add('slide');
+        // btn.classList.add('text-white')
+        // btn.classList.remove('text-j-yellow')
+      })
     }
-  
-    toggleButtons.forEach(function(toggleButton) {
-        toggleButton.addEventListener('click', () => {
-            document.documentElement.classList.toggle('dark');
-            if (document.documentElement.classList.contains('dark')) {
-              localStorage.setItem('theme', 'dark');
-              logoImg.src = 'images/logo-dark.png';
-              toggleButton.textContent = 'Light Mode';
-            } else {
-              localStorage.setItem('theme', 'light');
-              logoImg.src = 'images/logo-light.png';
-              toggleButton.textContent = 'Dark Mode';
-            }
-          });
+
+    darkModeSwitchers.forEach(function(btn) {
+      btn.addEventListener("click", function () {
+        document.documentElement.classList.toggle('dark');
+        if (!btn.classList.contains("slide")) {
+          btn.classList.add("slide");
+        } else {
+          btn.classList.remove("slide");
+        }
+        if (document.documentElement.classList.contains('dark')) {
+          localStorage.setItem('theme', 'dark');
+          logoImg.src = 'images/logo-dark.png';
+          btn.classList.add('text-white')
+          btn.classList.remove('text-j-yellow')
+        } else {
+          localStorage.setItem('theme', 'light');
+          logoImg.src = 'images/logo-light.png';
+          btn.classList.add('text-j-yellow')
+          btn.classList.remove('text-white')
+        }
+      });
     })
+
+
+    
+  
+    // toggleButtons.forEach(function(toggleButton) {
+    //     toggleButton.addEventListener('click', () => {
+    //         document.documentElement.classList.toggle('dark');
+    //         if (document.documentElement.classList.contains('dark')) {
+    //           localStorage.setItem('theme', 'dark');
+    //           logoImg.src = 'images/logo-dark.png';
+    //           toggleButton.textContent = 'Light Mode';
+    //         } else {
+    //           localStorage.setItem('theme', 'light');
+    //           logoImg.src = 'images/logo-light.png';
+    //           toggleButton.textContent = 'Dark Mode';
+    //         }
+    //       });
+    // })
   });
  // Dark Mode Toggle End
+
+
 
 // Navbar Toggle Start
 const navToggles = document.querySelectorAll('.nav-toggle');

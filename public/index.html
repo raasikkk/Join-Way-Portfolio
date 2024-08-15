@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body class="bg-white dark:bg-gray-900">
-    <div id="preloader">
+    <!-- <div id="preloader">
         <div class="loader"></div>
         <div class="loader"></div>
         <div class="loader"></div>
-    </div>
+    </div> -->
     <div class="container mx-auto">
         <!-- Nav -->
         <nav id="nav" class="mt-7">
@@ -26,7 +26,11 @@
                     <img src="images/logo-light.png" alt="logo" class="logo hover:-translate-y-1 transition">
                     <div class="buttons xxs:flex xs:flex sm:flex md:flex lg:hidden gap-[3rem]">
                         <!-- Dark Mode Switcher -->
-                    <button id="darkModeToggle" class="p-3 rounded bg-j-blue shadow-lg shadow-j-blue/35 hover:-translate-y-1 transition text-white dark:bg-j-yellow dark:text-black">Dark Mode</button>
+                        <button class="switch-btn  relative border-none p-1 flex justify-around w-[110px] h-[50px] rounded-full">
+                            <span class="switch-icons text-j-yellow dark:text-white text-[24px]"><i class="fa-regular fa-sun"></i></span>
+                            <span class="switch-icons text-gray-500 dark:text-j-yellow text-[24px] "><i class="fa-regular fa-moon"></i></span>
+                            <span class="switch "></span>
+                        </button>
                     <!-- Burger Menu -->
                     <button class="nav-toggle text-[1.5rem] cursor-pointer text-j-blue dark:text-white lg:hidden"><i class="fas fa-bars"></i></button>
                     </div>
@@ -56,7 +60,11 @@
             </div>
             <div class="buttons xxxs:hidden xxs:hidden xs:hidden sm:hidden md:hidden lg:flex gap-[3rem]">
                 <!-- Dark Mode Switcher -->
-            <button id="darkModeToggle" class="p-3 rounded bg-j-blue shadow-lg shadow-j-blue/35 hover:-translate-y-1 transition text-white dark:bg-j-yellow dark:text-black">Dark Mode</button>
+                <button class="switch-btn  relative border-none p-1 flex justify-around w-[110px] h-[50px] rounded-full">
+                    <span class="switch-icons text-j-yellow dark:text-white text-[24px]"><i class="fa-regular fa-sun"></i></span>
+                    <span class="switch-icons text-gray-500 dark:text-j-yellow text-[24px] "><i class="fa-regular fa-moon"></i></span>
+                    <span class="switch "></span>
+                </button>
             <!-- Burger Menu -->
             <button class="nav-toggle text-[1.5rem] cursor-pointer text-j-blue dark:text-white lg:hidden"><i class="fas fa-bars"></i></button>
         </div>

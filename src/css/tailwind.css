@@ -330,6 +330,16 @@
         transition-delay: 500ms;
     }
 
+    .switch {
+        @apply absolute top-1 bottom-1 w-[40px] h-[40px] -z-10 bg-j-blue rounded-full transition duration-[4000ms];
+        transition: all 0.3s linear;
+        left: 0.6rem;
+    }
+
+    .slide .switch {
+        left: 53%;
+        transition: all 0.3s linear
+    }
 
     /* Navbar Media Queries */
     @media screen and (max-width: 976px) {

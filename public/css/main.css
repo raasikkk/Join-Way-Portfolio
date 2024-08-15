@@ -614,12 +614,6 @@ html::selection{
         transition: all 0.3s linear;
       } */
 
-.hide-preloader {
-  z-index: -9999;
-  visibility: hidden;
-  opacity: 0;
-}
-
 .author-card{
   margin-left: auto;
   margin-right: auto;
@@ -936,6 +930,30 @@ html::selection{
 
 .portfolio-card:nth-child(3) {
   transition-delay: 500ms;
+}
+
+.switch{
+  position: absolute;
+  top: 0.25rem;
+  bottom: 0.25rem;
+  z-index: -10;
+  height: 40px;
+  width: 40px;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(52 0 137 / var(--tw-bg-opacity));
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 4000ms;
+  transition: all 0.3s linear;
+  left: 0.6rem;
+}
+
+.slide .switch {
+  left: 53%;
+  transition: all 0.3s linear
 }
 
 /* Navbar Media Queries */
@@ -1265,10 +1283,6 @@ html::selection{
   margin-top: 50px;
 }
 
-.mt-\[15px\]{
-  margin-top: 15px;
-}
-
 .flex{
   display: flex;
 }
@@ -1299,6 +1313,10 @@ html::selection{
 
 .w-\[100\%\]{
   width: 100%;
+}
+
+.w-\[110px\]{
+  width: 110px;
 }
 
 .w-\[179px\]{
@@ -1422,10 +1440,6 @@ html::selection{
   margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.rounded{
-  border-radius: 0.25rem;
-}
-
 .rounded-\[39px\]{
   border-radius: 39px;
 }
@@ -1444,6 +1458,10 @@ html::selection{
 
 .border-t-4{
   border-top-width: 4px;
+}
+
+.border-none{
+  border-style: none;
 }
 
 .border-\[\#1C004B\]{
@@ -1491,8 +1509,8 @@ html::selection{
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.p-3{
-  padding: 0.75rem;
+.p-1{
+  padding: 0.25rem;
 }
 
 .p-4{
@@ -1525,10 +1543,6 @@ html::selection{
   padding-bottom: 55px;
 }
 
-.pt-8{
-  padding-top: 2rem;
-}
-
 .pt-\[15px\]{
   padding-top: 15px;
 }
@@ -1555,6 +1569,10 @@ html::selection{
 
 .text-\[19px\]{
   font-size: 19px;
+}
+
+.text-\[24px\]{
+  font-size: 24px;
 }
 
 .text-\[25px\]{
@@ -1584,6 +1602,11 @@ html::selection{
 
 .font-semibold{
   font-weight: 600;
+}
+
+.text-gray-500{
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
 .text-j-blue{
@@ -1674,19 +1697,9 @@ html::selection{
   background-color: rgb(17 24 39 / var(--tw-bg-opacity));
 }
 
-.dark\:bg-j-yellow:is(.dark *){
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 215 0 / var(--tw-bg-opacity));
-}
-
 .dark\:text-\[\#C6B55A\]:is(.dark *){
   --tw-text-opacity: 1;
   color: rgb(198 181 90 / var(--tw-text-opacity));
-}
-
-.dark\:text-black:is(.dark *){
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .dark\:text-j-yellow:is(.dark *){
