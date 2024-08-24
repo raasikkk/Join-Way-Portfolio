@@ -614,6 +614,12 @@ html::selection{
         transition: all 0.3s linear;
       } */
 
+.hide-preloader {
+  z-index: -9999;
+  visibility: hidden;
+  opacity: 0;
+}
+
 .author-card{
   margin-left: auto;
   margin-right: auto;
