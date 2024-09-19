@@ -23,7 +23,7 @@
         z-index: 9999;
     }
     
-    .loader {
+    /* .loader {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -57,7 +57,7 @@
         border-radius: 0 0 5px 5px;
         background: #6100FF;
         animation-name: dot3_;
-    }
+    } */
     
     @keyframes dot1_ {
     
