@@ -26,7 +26,7 @@ const weekdays = [
 const preloader = document.querySelector('#preloader')
 
 window.addEventListener('load', function() {
-    preloader.classList.add('hide-preloader')
+    preloader.classList.add('hide-preloader') 
 })
 
 
@@ -203,4 +203,3 @@ const yearUpdate = document.getElementById('footerYear')
 const currentYear = new Date().getFullYear();
 
 yearUpdate.innerHTML = currentYear;
-
